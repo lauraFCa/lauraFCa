@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Laura
-- 👀 I’m interested in learning as much as I can
+- 👀 I’m interested in learning and improving as much as I can
 - 🌱 I’m currently on my first internship, working with QA, and loving it!
 - 👩🏾‍🎓 I'm in college for Software Engineering and Mechatronic Engineering
 
