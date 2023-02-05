@@ -12,10 +12,10 @@
 
 Most interesting stuff:
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=gerenciadorPizzaria&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=consumindoAPI&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=Algoritmos&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=react-learning&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=gerenciadorPizzaria&theme=material-palenight)](https://github.com/lauraFCa/gerenciadorPizzaria)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=consumindoAPI&theme=material-palenight)](https://github.com/lauraFCa/consumindoAPI)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=Algoritmos&theme=material-palenight)](https://github.com/lauraFCa/Algoritmos)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=react-learning&theme=material-palenight)](https://github.com/lauraFCa/react-learning)
 
 <!---
 LauraFCastro/LauraFCastro is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
