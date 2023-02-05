@@ -6,7 +6,7 @@
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=lauraFCa&theme=tokyonight&show_icons=true&count_private=true&hide=stars,contribs)](https://github.com/lauraFCa/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lauraFCa&layout=compact&theme=tokyonight)](https://github.com/lauraFCa/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lauraFCa&layout=compact&theme=tokyonight&hide=HTML)](https://github.com/lauraFCa/github-readme-stats)
 
 <br>
 
@@ -14,6 +14,7 @@ Most interesting stuff:
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=gerenciadorPizzaria&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=consumindoAPI&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=react-learning&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
 
 <!---
