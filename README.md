@@ -14,7 +14,7 @@ Most interesting stuff:
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=gerenciadorPizzaria&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=consumindoAPI&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
-
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=Algoritmos&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=react-learning&theme=material-palenight)](https://github.com/lauraFCa/github-readme-stats)
 
 <!---
