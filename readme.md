@@ -1,7 +1,7 @@
 - 👋🏽 Hi, I’m Laura
 - 📈 I’m interested in learning and improving as much as I can
-- 🐍 I'm still a huge Python fan, but I've been also learning a bit more about javascript frameworks, like React and ReactiveNative 😉
-- 👩🏽‍💻 I just got promoted to Middle QA, and I'm really enjoying communicating and working on new challenges!
+- 🐍 I'm a huge Python fan, but I've also been learning a bit more about javascript frameworks, like React and ReactiveNative 😉
+- 👩🏽‍💻 I work as a Middle QA, and I'm really enjoying communicating and working on new challenges!
 - 👩🏽‍🎓 I'm in college for Software Engineering and recently graduated in Mechatronics Engineering
 
 Contato:  [![Linkedin Badge](https://img.shields.io/badge/-Laura%20Castro-0339fc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lauraFCa/)](https://www.linkedin.com/in/laura-faria-castro/)
