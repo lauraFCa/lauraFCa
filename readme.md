@@ -19,7 +19,7 @@ Most interesting stuff:
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=api-testing-frameworks&theme=material-palenight)](https://github.com/lauraFCa/api-testing-frameworks)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=pizzeria-management-system&theme=material-palenight)](https://github.com/lauraFCa/pizzeria-management-system)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=linkedin-api-python-interface&theme=material-palenight)](https://github.com/lauraFCa/linkedin-api-python-interface)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=finalproj-devmovel&theme=material-palenight)](https://github.com/lauraFCa/school-finalproj-devmovel)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=financial-control-app&theme=material-palenight)](https://github.com/lauraFCa/financial-control-app)
 
 <!---
 LauraFCastro/LauraFCastro is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
