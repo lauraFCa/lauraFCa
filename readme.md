@@ -1,5 +1,5 @@
 
-<a href="https://www.linkedin.com/in/lauraFCa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/LinkedIn_Logo_2013.svg/2560px-LinkedIn_Logo_2013.svg.png" width="150" height="35"></a>
+<a href="https://www.linkedin.com/in/laura-faria-castro/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/LinkedIn_Logo_2013.svg/2560px-LinkedIn_Logo_2013.svg.png" width="150" height="35"></a>
 
 - 👋🏽 Hi, I’m Laura
 - 📈 I’m interested in learning and improving as much as I can
