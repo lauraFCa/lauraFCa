@@ -1,9 +1,13 @@
+
+<a href="https://www.linkedin.com/in/lauraFCa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/LinkedIn_Logo_2013.svg/2560px-LinkedIn_Logo_2013.svg.png" width="150" height="35"></a>
+
 - 👋🏽 Hi, I’m Laura
 - 📈 I’m interested in learning and improving as much as I can
 - 🐍 I'm a huge Python fan, but I've also been learning a bit more about javascript frameworks, like React and ReactiveNative 😉
 - 👩🏽‍💻 I work as a Middle QA, and I'm really enjoying communicating and working on new challenges!
 - 👩🏽‍🎓 I'm in college for Software Engineering and recently graduated in Mechatronics Engineering
 
+<!--
 Contato:  
 [![Linkedin Badge](https://img.shields.io/badge/-Laura%20Castro-0339fc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lauraFCa/)](https://www.linkedin.com/in/laura-faria-castro/)
 
@@ -17,9 +21,10 @@ Contato:
 Most interesting stuff:
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=api-testing-frameworks&theme=material-palenight)](https://github.com/lauraFCa/api-testing-frameworks)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=financial-control-app&theme=material-palenight)](https://github.com/lauraFCa/financial-control-app)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=pizzeria-management-system&theme=material-palenight)](https://github.com/lauraFCa/pizzeria-management-system)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=linkedin-api-python-interface&theme=material-palenight)](https://github.com/lauraFCa/linkedin-api-python-interface)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=financial-control-app&theme=material-palenight)](https://github.com/lauraFCa/financial-control-app)
+
 
 <!---
 LauraFCastro/LauraFCastro is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
