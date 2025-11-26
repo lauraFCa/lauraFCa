@@ -1,14 +1,13 @@
 
-<a href="https://www.linkedin.com/in/laura-faria-castro/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/LinkedIn_Logo_2013.svg/2560px-LinkedIn_Logo_2013.svg.png" width="150" height="35"></a>
 
-- 👋🏽 Hi, I’m Laura
+
+- 👋🏽 Hi, I’m Laura <a style="padding-left: 5px;" href="https://www.linkedin.com/in/laura-faria-castro/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/250px-LinkedIn_logo_initials.png" width="20" height="20"></a>
 - 📈 I’m interested in learning and improving as much as I can
-- 🐍 I'm a huge Python fan, but I've also been learning a bit more about javascript frameworks, like React and ReactiveNative 😉
+- 🐍 I'm a huge Python fan, but I've also been learning a bit more about Javascript frameworks, like React and ReactiveNative 😉
 - 👩🏽‍💻 I work as a Middle QA, and I'm really enjoying communicating and working on new challenges!
 - 👩🏽‍🎓 I'm in college for Software Engineering and recently graduated in Mechatronics Engineering
 
-
-<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lauraFCa&theme=tokyonight&hide=HTML)](https://github.com/lauraFCa/github-readme-stats) -->
+<br/>
 
 **Top Languages:**  
 - JavaScript - 35%  
@@ -30,11 +29,4 @@ Most interesting stuff:
 
 [![Card three](./imgs/card-three.png)](https://github.com/lauraFCa/pizzeria-management-system)
 [![Card four](./imgs/card-four.png)](https://github.com/lauraFCa/linkedin-api-python-interface)
-
-<!-- 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=api-testing-frameworks&theme=material-palenight)](https://github.com/lauraFCa/api-testing-frameworks)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=financial-control-app&theme=material-palenight)](https://github.com/lauraFCa/financial-control-app)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=pizzeria-management-system&theme=material-palenight)](https://github.com/lauraFCa/pizzeria-management-system)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=linkedin-api-python-interface&theme=material-palenight)](https://github.com/lauraFCa/linkedin-api-python-interface) -->
-
 
