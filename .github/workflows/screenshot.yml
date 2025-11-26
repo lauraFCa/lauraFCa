@@ -157,7 +157,7 @@ jobs:
               f.write("\n")
             
             with open('repo_langs.json', 'w', encoding='utf-8') as f:
-              f.write(lines_json)
+              f.write("\n".join(lines_json))
 
 
         if __name__ == "__main__":
