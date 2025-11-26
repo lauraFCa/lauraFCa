@@ -152,7 +152,6 @@ jobs:
         def main():
             token = os.getenv("GITHUB_TOKEN")
             lines_md = []
-            lines_json = []
 
             lang_names = []
 
@@ -163,11 +162,11 @@ jobs:
             repos = get_all_repos(token)
             for repo in repos:
                 langs = get_repo_langs(repo, token)
-                names = ', '.join(langs.keys()) if langs else 'none'
-                lang_names.append(langs.keys()) if langs else None
+                languages = langs.keys()
+                names = ', '.join(languages) if langs else 'none'
+                lang_names.append(list(languages)) if langs else ''
                 print(f"{repo}: {names}")
                 lines_md.append(f"- {repo}: {names}")
-                lines_json.append(f"{repo}: {names}")
 
             with open('repo_langs.md', 'w', encoding='utf-8') as f:
               f.write("## Repository languages\n\n")
@@ -179,9 +178,6 @@ jobs:
             # Save the ranking text so the workflow can insert it into the README
             with open('top_lang.txt', 'w', encoding='utf-8') as f:
               f.write(top_lang)
-
-            with open('repo_langs.txt', 'w', encoding='utf-8') as f:
-              f.write("\n".join(lines_json))
 
 
         if __name__ == "__main__":
