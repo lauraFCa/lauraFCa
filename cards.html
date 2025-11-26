@@ -16,7 +16,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: radial-gradient(1200px 600px at 20% 0%, #1e293b 0%, var(--bg) 55%);
+      background: none;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
       color: var(--text);
       padding: 24px;
@@ -24,7 +24,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
       gap: 24px;
       max-width: 900px;
       width: 100%;
@@ -55,7 +56,7 @@
 
     .card__subtitle {
       margin: 0 0 14px;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: var(--muted);
       font-weight: 500;
     }
@@ -68,39 +69,39 @@
     }
   </style>
 <section class="grid">
-    <article class="card">
+    <article class="card one">
       <div class="card__bar"></div>
       <div class="card__content">
-        <h1 class="card__title">Título 1</h1>
-        <h2 class="card__subtitle">Subtítulo 1</h2>
-        <p class="card__description">Descrição do primeiro card.</p>
+        <h1 class="card__title">api-testing-frameworks</h1>
+        <h2 class="card__subtitle">RobotFramework 73.2% | JavaScript 26.8%</h2>
+        <p class="card__description">API test automation repository using two distinct approaches and tools: Robot Framework and Cypress. The goal is to demonstrate modern automation practices for REST APIs, particularly with a focus on the GitHub API (Issues, Actions, and Pull Requests).</p>
       </div>
     </article>
 
-    <article class="card">
+    <article class="card two">
       <div class="card__bar"></div>
       <div class="card__content">
-        <h1 class="card__title">Título 2</h1>
-        <h2 class="card__subtitle">Subtítulo 2</h2>
-        <p class="card__description">Descrição do segundo card.</p>
+        <h1 class="card__title">financial-control-app</h1>
+        <h2 class="card__subtitle">JavaScript 100.0% (React Native)</h2>
+        <p class="card__description">Financial control app - with features such as: Login, profile management, settings, charts, quotes, and investment management - made with React Native</p>
       </div>
     </article>
 
-    <article class="card">
+    <article class="card three">
       <div class="card__bar"></div>
       <div class="card__content">
-        <h1 class="card__title">Título 3</h1>
-        <h2 class="card__subtitle">Subtítulo 3</h2>
-        <p class="card__description">Descrição do terceiro card.</p>
+        <h1 class="card__title">pizzeria-management-system</h1>
+        <h2 class="card__subtitle">Python 100.0% (TKinter, SQL)</h2>
+        <p class="card__description">Desktop application developed in Python (with TKinter and database integration) that allows you to manage operations of a pizza restaurant - Authentication, Product and Order Management and Sales Statistics</p>
       </div>
     </article>
 
-    <article class="card">
+    <article class="card four">
       <div class="card__bar"></div>
       <div class="card__content">
-        <h1 class="card__title">Título 4</h1>
-        <h2 class="card__subtitle">Subtítulo 4</h2>
-        <p class="card__description">Descrição do quarto card.</p>
+        <h1 class="card__title">linkedin-api-python-interface</h1>
+        <h2 class="card__subtitle">Python 100.0%</h2>
+        <p class="card__description">Desktop application developed in Python (with PyQt6) to manage a Linkedin Company Page through Linkedin's Rest API - GetData and Make posts with links and pictures</p>
       </div>
     </article>
   </section>

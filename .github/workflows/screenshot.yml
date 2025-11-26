@@ -37,10 +37,21 @@ jobs:
 
           await page.goto(`file://${process.cwd()}/cards.html`);
           await page.setViewport({ width: 1200, height: 800 });
-          await page.screenshot({ path: 'cards.png', fullPage: true });
 
           const elements = await page.$('section');
           await elements.screenshot({ path: 'all-cards.png' });
+
+          const cardOne = await page.$('.card.one');
+          await cardOne.screenshot({ path: 'card-one.png' });
+
+          const cardTwo = await page.$('.card.two');
+          await cardTwo.screenshot({ path: 'card-two.png' });
+
+          const cardThree = await page.$('.card.three');
+          await cardThree.screenshot({ path: 'card-three.png' });
+
+          const cardFour = await page.$('.card.four');
+          await cardFour.screenshot({ path: 'card-four.png' });
 
           await browser.close();
           console.log('Screenshot gerado: cards.png');
@@ -54,7 +65,10 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add cards.png
         git add all-cards.png
-        git commit -m "Update cards.png screenshot" || echo "No changes to commit"
+        git add card-one.png
+        git add card-two.png
+        git add card-three.png
+        git add card-four.png
+        git commit -m "Update cards screenshots" || echo "No changes to commit"
         git push
