@@ -1,0 +1,109 @@
+<body>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --radius: 14px;
+      --shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(1200px 600px at 20% 0%, #1e293b 0%, var(--bg) 55%);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--text);
+      padding: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)), var(--card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .card__bar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent), #34d399 55%, #f59e0b);
+    }
+
+    .card__content {
+      padding: 22px;
+    }
+
+    .card__title {
+      margin: 0 0 6px;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .card__subtitle {
+      margin: 0 0 14px;
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .card__description {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+  </style>
+<section class="grid">
+    <article class="card">
+      <div class="card__bar"></div>
+      <div class="card__content">
+        <h1 class="card__title">Título 1</h1>
+        <h2 class="card__subtitle">Subtítulo 1</h2>
+        <p class="card__description">Descrição do primeiro card.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__bar"></div>
+      <div class="card__content">
+        <h1 class="card__title">Título 2</h1>
+        <h2 class="card__subtitle">Subtítulo 2</h2>
+        <p class="card__description">Descrição do segundo card.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__bar"></div>
+      <div class="card__content">
+        <h1 class="card__title">Título 3</h1>
+        <h2 class="card__subtitle">Subtítulo 3</h2>
+        <p class="card__description">Descrição do terceiro card.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__bar"></div>
+      <div class="card__content">
+        <h1 class="card__title">Título 4</h1>
+        <h2 class="card__subtitle">Subtítulo 4</h2>
+        <p class="card__description">Descrição do quarto card.</p>
+      </div>
+    </article>
+  </section>
+
+
+</body>
