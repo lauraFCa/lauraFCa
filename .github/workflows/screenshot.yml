@@ -36,10 +36,22 @@ jobs:
           const page = await browser.newPage();
 
           await page.goto(`file://${process.cwd()}/cards.html`);
+          // Full desktop viewport for the section screenshot
           await page.setViewport({ width: 1024, height: 600 });
 
           const elements = await page.$('section');
           await elements.screenshot({ path: 'all-cards.png' });
+
+          // Switch to mobile width (375px) before taking individual card screenshots.
+          // Also force each card element to be 375px wide so the resulting PNG has the expected width.
+          await page.setViewport({ width: 375, height: 800 });
+          await page.evaluate(() => {
+            document.querySelectorAll('.card').forEach(el => {
+              el.style.boxSizing = 'border-box';
+              el.style.width = '375px';
+              el.style.maxWidth = '375px';
+            });
+          });
 
           const cardOne = await page.$('.card.one');
           await cardOne.screenshot({ path: 'card-one.png' });
@@ -102,7 +114,7 @@ jobs:
         import requests
 
         def get_all_repos(token):
-            url = "https://api.github.com/orgs/lauraFCa/repos"
+            url = "https://api.github.com/users/lauraFCa/repos"
             headers = {
                 "Authorization": f"Bearer {token}",
                 "Accept": "application/vnd.github+json",
