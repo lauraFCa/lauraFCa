@@ -164,7 +164,7 @@ jobs:
                 langs = get_repo_langs(repo, token)
                 languages = langs.keys()
                 names = ', '.join(languages) if langs else 'none'
-                lang_names.append(list(languages)) if langs else ''
+                lang_names.extend(languages)
                 print(f"{repo}: {names}")
                 lines_md.append(f"- {repo}: {names}")
 
