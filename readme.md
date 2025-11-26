@@ -10,7 +10,7 @@
 
 <!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lauraFCa&theme=tokyonight&hide=HTML)](https://github.com/lauraFCa/github-readme-stats) -->
 
-Top Languages:
+Top Languages:  
 JavaScript - 35%
 HTML - 15%
 Python - 15%
@@ -25,11 +25,11 @@ PHP - 4%
 
 Most interesting stuff:
 
-[![Card One](./card-one.png)](https://github.com/lauraFCa/api-testing-frameworks)
-[![Card two](./card-two.png)](https://github.com/lauraFCa/financial-control-app)
+[![Card One](./imgs/card-one.png)](https://github.com/lauraFCa/api-testing-frameworks)
+[![Card two](./imgs/card-two.png)](https://github.com/lauraFCa/financial-control-app)
 
-[![Card three](./card-three.png)](https://github.com/lauraFCa/pizzeria-management-system)
-[![Card four](./card-four.png)](https://github.com/lauraFCa/linkedin-api-python-interface)
+[![Card three](./imgs/card-three.png)](https://github.com/lauraFCa/pizzeria-management-system)
+[![Card four](./imgs/card-four.png)](https://github.com/lauraFCa/linkedin-api-python-interface)
 
 <!-- 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lauraFCa&repo=api-testing-frameworks&theme=material-palenight)](https://github.com/lauraFCa/api-testing-frameworks)

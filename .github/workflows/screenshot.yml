@@ -145,7 +145,7 @@ jobs:
           for i, (item, contagem) in enumerate(ranking_ordenado):
               porcentagem = (contagem / N_TOTAL) * 100
               print(f"{item} - {porcentagem:.0f}%")
-              saida += f"{item} - {porcentagem:.0f}%\n"
+              saida += f"- {item} - {porcentagem:.0f}%  \n"
           return saida
 
 
@@ -211,10 +211,10 @@ jobs:
             if start != -1:
                 br_idx = content.find('<br>', start)
                 if br_idx != -1:
-                    # keep the 'Top Languages:' line, replace everything between it and the <br>
+                    # keep the 'Top Languages:  ' line, replace everything between it and the <br>
                     line_end = content.find('\n', start)
                     if line_end == -1:
-                        line_end = start + len('Top Languages:')
+                        line_end = start + len('Top Languages:  ')
                     prefix = content[:line_end+1]
                     suffix = content[br_idx:]
                     new_content = prefix + top + '\n\n' + suffix
