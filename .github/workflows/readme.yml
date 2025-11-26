@@ -1,4 +1,4 @@
-name: Screenshot cards
+name: Screenshot cards and Set top languages
 
 on:
   push:
@@ -207,14 +207,14 @@ jobs:
         if readme.exists() and top_file.exists():
             content = readme.read_text(encoding='utf-8')
             top = top_file.read_text(encoding='utf-8').strip()
-            start = content.find('Top Languages:')
+            start = content.find('**Top Languages:**  ')
             if start != -1:
                 br_idx = content.find('<br>', start)
                 if br_idx != -1:
-                    # keep the 'Top Languages:  ' line, replace everything between it and the <br>
+                    # keep the '**Top Languages:**  ' line, replace everything between it and the <br>
                     line_end = content.find('\n', start)
                     if line_end == -1:
-                        line_end = start + len('Top Languages:  ')
+                        line_end = start + len('**Top Languages:**  ')
                     prefix = content[:line_end+1]
                     suffix = content[br_idx:]
                     new_content = prefix + top + '\n\n' + suffix
