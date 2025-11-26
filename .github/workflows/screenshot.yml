@@ -2,7 +2,7 @@ name: Screenshot cards
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   workflow_dispatch:
 
 jobs: 
@@ -156,7 +156,7 @@ jobs:
               f.write("\n".join(lines_md))
               f.write("\n")
             
-            with open('repo_langs.json', 'w', encoding='urf-8') as f:
+            with open('repo_langs.json', 'w', encoding='utf-8') as f:
               f.write(lines_json)
 
 
@@ -172,7 +172,7 @@ jobs:
         path: repo_langs.*
         if-no-files-found: warn
 
-        
+
     - name: Print langs to summary
       run: cat repo_langs.md >> $GITHUB_STEP_SUMMARY
       
