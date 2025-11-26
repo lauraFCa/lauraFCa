@@ -137,6 +137,8 @@ jobs:
 
         def main():
             token = os.getenv("GITHUB_TOKEN")
+            lines_md = []
+            lines_json = []
             if not token:
                 print("GITHUB_TOKEN not set", file=sys.stderr)
                 sys.exit(1)
@@ -146,18 +148,31 @@ jobs:
                 langs = get_repo_langs(repo, token)
                 names = ', '.join(langs.keys()) if langs else 'none'
                 print(f"{repo}: {names}")
-                lines.append(f"- {repo}: {names}")
+                lines_md.append(f"- {repo}: {names}")
+                lines_json.append(f"{repo}: {names}")
 
             with open('repo_langs.md', 'w', encoding='utf-8') as f:
               f.write("## Repository languages\n\n")
-              f.write("\n".join(lines))
+              f.write("\n".join(lines_md))
               f.write("\n")
+            
+            with open('repo_langs.json', 'w', encoding='urf-8') as f:
+              f.write(lines_json)
+
 
         if __name__ == "__main__":
             main()
         PY
 
 
+    - name: upload files
+      uses: actions/upload-artifact@v5.0.0
+      with:
+        name: repo_langs
+        path: repo_langs.*
+        if-no-files-found: warn
+
+        
     - name: Print langs to summary
       run: cat repo_langs.md >> $GITHUB_STEP_SUMMARY
       
