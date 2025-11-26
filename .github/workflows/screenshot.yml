@@ -36,7 +36,7 @@ jobs:
           const page = await browser.newPage();
 
           await page.goto(`file://${process.cwd()}/cards.html`);
-          await page.setViewport({ width: 1200, height: 800 });
+          await page.setViewport({ width: 1024, height: 600 });
 
           const elements = await page.$('section');
           await elements.screenshot({ path: 'all-cards.png' });
@@ -128,6 +128,7 @@ jobs:
             if not token:
                 print("GITHUB_TOKEN not set", file=sys.stderr)
                 sys.exit(1)
+
             repos = get_all_repos(token)
             for repo in repos:
                 langs = get_repo_langs(repo, token)
@@ -135,10 +136,10 @@ jobs:
                 print(f"{repo}: {names}")
                 lines.append(f"- {repo}: {names}")
 
-              with open('repo_langs.md', 'w', encoding='utf-8') as f:
-                f.write("## Repository languages\n\n")
-                f.write("\n".join(lines))
-                f.write("\n")
+            with open('repo_langs.md', 'w', encoding='utf-8') as f:
+              f.write("## Repository languages\n\n")
+              f.write("\n".join(lines))
+              f.write("\n")
 
         if __name__ == "__main__":
             main()
