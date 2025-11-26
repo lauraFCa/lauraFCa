@@ -78,11 +78,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git pull
-        git add all-cards.png
-        git add card-one.png
-        git add card-two.png
-        git add card-three.png
-        git add card-four.png
+        git add imgs/*.png
         git commit -m "Update cards screenshots" || echo "No changes to commit"
         git push
 
