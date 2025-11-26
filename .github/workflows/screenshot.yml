@@ -39,6 +39,9 @@ jobs:
           await page.setViewport({ width: 1200, height: 800 });
           await page.screenshot({ path: 'cards.png', fullPage: true });
 
+          const elements = await page.$('section');
+          await elements.screenshot({ path: 'all-cards.png' });
+
           await browser.close();
           console.log('Screenshot gerado: cards.png');
         })();
@@ -52,5 +55,6 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add cards.png
+        git add all-cards.png
         git commit -m "Update cards.png screenshot" || echo "No changes to commit"
         git push
