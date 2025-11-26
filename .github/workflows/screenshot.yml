@@ -40,7 +40,7 @@ jobs:
           await page.setViewport({ width: 1024, height: 600 });
 
           const elements = await page.$('section');
-          await elements.screenshot({ path: 'imgs/all-cards.png' });
+          await elements.screenshot({ path: `${process.cwd()}/imgs/all-cards.png` });
 
           // Switch to mobile width (375px) before taking individual card screenshots.
           // Also force each card element to be 375px wide so the resulting PNG has the expected width.
@@ -54,16 +54,16 @@ jobs:
           });
 
           const cardOne = await page.$('.card.one');
-          await cardOne.screenshot({ path: 'imgs/card-one.png' });
+          await cardOne.screenshot({ path: `${process.cwd()}/imgs/card-one.png` });
 
           const cardTwo = await page.$('.card.two');
-          await cardTwo.screenshot({ path: 'imgs/card-two.png' });
+          await cardTwo.screenshot({ path: `${process.cwd()}/imgs/card-two.png` });
 
           const cardThree = await page.$('.card.three');
-          await cardThree.screenshot({ path: 'imgs/card-three.png' });
+          await cardThree.screenshot({ path: `${process.cwd()}/imgs/card-three.png` });
 
           const cardFour = await page.$('.card.four');
-          await cardFour.screenshot({ path: 'imgs/card-four.png' });
+          await cardFour.screenshot({ path: `${process.cwd()}/imgs/card-four.png` });
 
           await browser.close();
           console.log('Screenshot gerado: cards.png');
