@@ -8,7 +8,9 @@
 - 👩🏽‍🎓 I'm in college for Software Engineering and recently graduated in Mechatronics Engineering
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lauraFCa&theme=tokyonight&hide=HTML)](https://github.com/lauraFCa/github-readme-stats)
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lauraFCa&theme=tokyonight&hide=HTML)](https://github.com/lauraFCa/github-readme-stats) -->
+
+Top Languages:
 
 <br>
 

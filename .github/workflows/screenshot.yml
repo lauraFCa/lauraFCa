@@ -40,7 +40,7 @@ jobs:
           await page.setViewport({ width: 1024, height: 600 });
 
           const elements = await page.$('section');
-          await elements.screenshot({ path: 'all-cards.png' });
+          await elements.screenshot({ path: 'imgs/all-cards.png' });
 
           // Switch to mobile width (375px) before taking individual card screenshots.
           // Also force each card element to be 375px wide so the resulting PNG has the expected width.
@@ -54,16 +54,16 @@ jobs:
           });
 
           const cardOne = await page.$('.card.one');
-          await cardOne.screenshot({ path: 'card-one.png' });
+          await cardOne.screenshot({ path: 'imgs/card-one.png' });
 
           const cardTwo = await page.$('.card.two');
-          await cardTwo.screenshot({ path: 'card-two.png' });
+          await cardTwo.screenshot({ path: 'imgs/card-two.png' });
 
           const cardThree = await page.$('.card.three');
-          await cardThree.screenshot({ path: 'card-three.png' });
+          await cardThree.screenshot({ path: 'imgs/card-three.png' });
 
           const cardFour = await page.$('.card.four');
-          await cardFour.screenshot({ path: 'card-four.png' });
+          await cardFour.screenshot({ path: 'imgs/card-four.png' });
 
           await browser.close();
           console.log('Screenshot gerado: cards.png');
@@ -77,6 +77,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git pull
         git add all-cards.png
         git add card-one.png
         git add card-two.png
@@ -135,10 +136,30 @@ jobs:
             resp.raise_for_status()
             return resp.json()
 
+
+        def create_ranking(langs):
+          frequencias = {}
+          N_TOTAL = len(langs)
+          for item in langs:
+            frequencias[item] = frequencias.get(item, 0) + 1
+          ranking_ordenado = sorted(frequencias.items(), key=lambda item: item[1], reverse=True)
+          
+          print("\nSaída do Ranking com Porcentagem:")
+          saida = ""
+          for i, (item, contagem) in enumerate(ranking_ordenado):
+              porcentagem = (contagem / N_TOTAL) * 100
+              print(f"{item} - {porcentagem:.0f}%")
+              saida += f"{item} - {porcentagem:.0f}%\n"
+          return saida
+
+
         def main():
             token = os.getenv("GITHUB_TOKEN")
             lines_md = []
             lines_json = []
+
+            lang_names = []
+
             if not token:
                 print("GITHUB_TOKEN not set", file=sys.stderr)
                 sys.exit(1)
@@ -147,6 +168,7 @@ jobs:
             for repo in repos:
                 langs = get_repo_langs(repo, token)
                 names = ', '.join(langs.keys()) if langs else 'none'
+                lang_names.append(langs.keys()) if langs else None
                 print(f"{repo}: {names}")
                 lines_md.append(f"- {repo}: {names}")
                 lines_json.append(f"{repo}: {names}")
@@ -155,8 +177,14 @@ jobs:
               f.write("## Repository languages\n\n")
               f.write("\n".join(lines_md))
               f.write("\n")
-            
-            with open('repo_langs.json', 'w', encoding='utf-8') as f:
+
+            top_lang = create_ranking(lang_names)
+
+            # Save the ranking text so the workflow can insert it into the README
+            with open('top_lang.txt', 'w', encoding='utf-8') as f:
+              f.write(top_lang)
+
+            with open('repo_langs.txt', 'w', encoding='utf-8') as f:
               f.write("\n".join(lines_json))
 
 
@@ -165,12 +193,56 @@ jobs:
         PY
 
 
+
+        
     - name: upload files
       uses: actions/upload-artifact@v5.0.0
       with:
         name: repo_langs
         path: repo_langs.*
         if-no-files-found: warn
+
+
+    - name: Insert top_lang into README and push
+      env:
+        TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+      run: |
+        python - <<'PY'
+        from pathlib import Path
+
+        readme = Path('readme.md')
+        top_file = Path('top_lang.txt')
+        if readme.exists() and top_file.exists():
+            content = readme.read_text(encoding='utf-8')
+            top = top_file.read_text(encoding='utf-8').strip()
+            start = content.find('Top Languages:')
+            if start != -1:
+                br_idx = content.find('<br>', start)
+                if br_idx != -1:
+                    # keep the 'Top Languages:' line, replace everything between it and the <br>
+                    line_end = content.find('\n', start)
+                    if line_end == -1:
+                        line_end = start + len('Top Languages:')
+                    prefix = content[:line_end+1]
+                    suffix = content[br_idx:]
+                    new_content = prefix + top + '\n\n' + suffix
+                    readme.write_text(new_content, encoding='utf-8')
+                    print('README updated')
+                else:
+                    print('<br> tag not found after Top Languages:, skipping README update')
+            else:
+                print('Top Languages: not found in README, skipping')
+        else:
+            print('readme.md or top_lang.txt not found, skipping')
+        PY
+
+                git config --global user.name "github-actions[bot]"
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                git pull
+                git add readme.md || true
+                git add top_lang.txt || true
+                git commit -m "Update Top Languages in readme" || echo "No changes to commit"
+                git push https://x-access-token:${{ secrets.TOKEN_GITHUB }}@github.com/${{ github.repository }}.git HEAD:main || echo "Push failed"
 
 
     - name: Print langs to summary
