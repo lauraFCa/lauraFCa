@@ -140,10 +140,21 @@ jobs:
           
           print("\nSaída do Ranking com Porcentagem:")
           saida = ""
+          indx = 0
+          add_tbl = True
           for i, (item, contagem) in enumerate(ranking_ordenado):
               porcentagem = (contagem / N_TOTAL) * 100
               print(f"{item} - {porcentagem:.0f}%")
-              saida += f"- {item} - {porcentagem:.0f}%  \n"
+              if indx < 3:
+                saida += f"{item} - {porcentagem:.0f}%  |"
+                if add_tbl and indx == 2:
+                  saida += "\n--|--|--"
+              else:
+                indx = -1
+                add_tbl = False
+                saida += "\n"
+                
+              indx+=1
           return saida
 
 
