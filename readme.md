@@ -18,6 +18,7 @@
 
 <br>
 
+<!--
 Most interesting stuff:
 
 [![Card One](./imgs/card-one.png)](https://github.com/lauraFCa/api-testing-frameworks)
@@ -25,4 +26,4 @@ Most interesting stuff:
 
 [![Card three](./imgs/card-three.png)](https://github.com/lauraFCa/pizzeria-management-system)
 [![Card four](./imgs/card-four.png)](https://github.com/lauraFCa/linkedin-api-python-interface)
-
+-->
