@@ -10,15 +10,11 @@
 <br/>
 
 **Top Languages:**  
-- JavaScript - 35%  
-- HTML - 15%  
-- Python - 15%  
-- CSS - 12%  
-- RobotFramework - 8%  
-- C - 4%  
-- TypeScript - 4%  
-- Java - 4%  
-- PHP - 4%
+| JavaScript - 35% | HTML - 15%          | Python - 15% |
+| ---------------- | ------------------- | ------------ |
+| CSS - 12%        | RobotFramework - 8% | C - 4%       |
+| TypeScript - 4%  | Java - 4%           | PHP - 4%     |
+
 
 <br>
 
