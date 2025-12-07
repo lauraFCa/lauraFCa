@@ -1,8 +1,6 @@
 name: Screenshot cards and Set top languages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs: 
